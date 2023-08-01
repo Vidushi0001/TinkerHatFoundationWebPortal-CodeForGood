@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+    margin-top: 12vh;
+    font-family: 'Ubuntu', sans-serif;
+}
+h2{
+    margin-left: 12vh;
+    margin-top: 30px; 
+    font-family: 'Ubuntu', sans-serif;
+}
+div{
+    margin-left: 12vh;
+    margin-top: 50px;
+}
+.my-pdfs{
+    text-align: center;
+    /* margin-left: 30px; */
+    font-size: 65px;
+    color: red;
+}
+.download-item > a{
+    text-decoration: none;
+    display: block;
+}
+.download-item{
+    display: inline-block;
+    width: 25%;
+}
+

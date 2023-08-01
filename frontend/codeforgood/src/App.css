@@ -1,0 +1,167 @@
+.App {
+  text-align: center;
+}
+
+.body1 {
+  font-family: 'Acme', sans-serif;
+  /* overflow-x: hidden; */
+  background-color: rgb(251, 251, 251);
+}
+
+.bg {
+  height: auto;
+  width: 100%;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  border: 1px solid white;
+  border-radius: 1%;
+  display: block;
+}
+
+.bg>img {
+  width: 100%;
+  height: 500px;
+  border-radius: 0 0 1% 1%;
+}
+
+.welcome {
+  position: absolute;
+  top: 100px;
+  left: 35%;
+  color: white;
+  padding: 0.5%;
+  font-size: 1.7rem;
+  color: white;
+  background: rgb(166 155 192 / 60%);
+  text-align: center;
+  border-radius: 5px 5px;
+}
+
+.student {
+  margin-left: 12%;
+  background: rgb(188 230 255);
+}
+
+.student,
+.teacher,
+.admin {
+  display: inline-block;
+  text-align: center;
+  font-size: 2rem;
+  padding: 2%;
+  border-radius: 30%;
+  margin-top: 2%;
+}
+
+.teacher {
+  background: rgb(39 255 207);
+  margin-left: 6%;
+}
+
+.admin {
+  background: rgb(238 255 39);
+  margin-left: 6%;
+}
+
+.we-are-heading {
+  text-align: center;
+  margin-top: 3%;
+  font-size: 2.5rem;
+}
+
+.we-are-schools {
+  width: 18%;
+  height: 200px;
+  border-radius: 50%;
+  font-size: 2rem;
+  margin-left: 5%;
+}
+
+.gallery {
+  margin-left: 4%;
+  margin-right: 4%;
+  margin-top: 4%;
+  border: 4px solid green;
+  border-radius: 4%;
+  width: 90%;
+  height: 80%;
+}
+
+.gallery-images {
+  border-radius: 4%;
+}
+
+.gallery-div>p {
+  margin-top: 2%;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.partners {
+  margin-top: 3%;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.partners-img {
+  display: inline-block;
+  margin-left: 7%;
+}
+
+.last {
+  margin-bottom: 2%;
+}
+
+.bb3 {
+  padding-top: 30px;
+}
+
+.bb1 {
+  text-decoration: none;
+
+}
+
+.bb {
+  text-decoration: none;
+  color: azure;
+  background-color: rgb(40, 50, 50);
+  width: 100%;
+  display: block;
+  margin-top: 8%;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

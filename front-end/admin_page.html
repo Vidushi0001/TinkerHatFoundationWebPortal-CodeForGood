@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <title>Admin Page</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Acme&family=Cormorant+Garamond:wght@300&display=swap');
+
+        body {
+            font-family: 'Acme', sans-serif;
+            overflow-x: hidden;
+            /* font-family: 'Cormorant Garamond', serif; */
+        }
+
+        .classes {
+            margin-top: 5%;
+        }
+
+        .classes-schedule {
+            width: 50%;
+            float: left;
+        }
+
+        .report {
+            width: 30%;
+            margin-top: 3%;
+            float: right;
+            text-align: left;
+        }
+
+        .class-progress {
+            height: 2rem;
+            margin: 1%;
+        }
+
+        .report-progress {
+            width: 50%;
+            height: 5rem;
+            transform: rotate(270deg);
+            position: relative;
+            top: 0;
+            left: 20%;
+        }
+
+        /* .points-earned {
+            position: relative;
+            display: block;
+            margin-top: 38%;
+        } */
+
+        .center {
+            margin-left: 20%;
+        }
+
+        .notes {
+            clear: both;
+            position: absolute;
+            bottom: 10%;
+            left: 7%;
+        }
+
+        .notes-btn {
+            margin-left: 1.9%;
+            height: 5rem;
+        }
+
+        .standard {
+            margin-top: 1%;
+            width: 48%;
+            text-align: center;
+            margin-left: 1%;
+        }
+
+        .ask-question {
+            margin-left: 10%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="classes container">
+
+        <div class="classes-heading container mt-3 center">Live Classes Schedule</div>
+        <div class="input-group mb-3 standard">
+            <label class="input-group-text" for="std">Standard</label>
+            <select class="form-select" id="std">
+                <option selected>Choose...</option>
+                <option value="1">1st</option>
+                <option value="2">2nd</option>
+                <option value="3">3rd</option>
+                <option value="4">4th</option>
+                <option value="5">5th</option>
+                <option value="6">6th</option>
+                <option value="7">7th</option>
+                <option value="8">8th</option>
+                <option value="9">9th</option>
+                <option value="10" selected>10th</option>
+                <option value="11">11th</option>
+                <option value="12">12th</option>
+            </select>
+        </div>
+        <div class="classes-schedule container mt-3">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            9 AM - 12 PM
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="progress class-progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 25%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">English</div>
+                            </div>
+                            <div class="progress class-progress">
+                                <div class="progress-bar bg-info" role="progressbar" style="width: 50%"
+                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Elementary Physics</div>
+                            </div>
+                            <div class="progress class-progress">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 75%"
+                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Chemistry</div>
+                            </div>
+                            <div class="progress class-progress">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%"
+                                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Data Structure</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            12 PM - 3 PM
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="progress class-progress">
+                                <div class="progress-bar bg-secondary" role="progressbar" style="width: 25%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">English</div>
+                            </div>
+                            <div class="progress class-progress">
+                                <div class="progress-bar bg-secondary" role="progressbar" style="width: 50%"
+                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Elementary Physics</div>
+                            </div>
+                            <div class="progress class-progress">
+                                <div class="progress-bar bg-secondary" role="progressbar" style="width: 75%"
+                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Chemistry</div>
+                            </div>
+                            <div class="progress class-progress">
+                                <div class="progress-bar bg-secondary" role="progressbar" style="width: 100%"
+                                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Data Structure</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            3 PM - 6 PM
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="progress class-progress">
+                                <div class="progress-bar bg-secondary" role="progressbar" style="width: 25%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">English</div>
+                            </div>
+                            <div class="progress class-progress">
+                                <div class="progress-bar bg-secondary" role="progressbar" style="width: 50%"
+                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Elementary Physics</div>
+                            </div>
+                            <div class="progress class-progress">
+                                <div class="progress-bar bg-secondary" role="progressbar" style="width: 75%"
+                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Chemistry</div>
+                            </div>
+                            <div class="progress class-progress">
+                                <div class="progress-bar bg-secondary" role="progressbar" style="width: 100%"
+                                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Data Structure</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="report container">
+        <div class="student-report">
+            <p>Student Report</p>
+            <div class="report-progress progress">
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 15%" aria-valuenow="15"
+                    aria-valuemin="0" aria-valuemax="100">15%</div>
+                <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="30"
+                    aria-valuemin="0" aria-valuemax="100">50%</div>
+                <div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="20"
+                    aria-valuemin="0" aria-valuemax="100">20%</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="notes container">
+        <button type="button" class="btn btn-primary notes-btn">
+            Add Notes & references
+        </button>
+        <button type="button" class="btn btn-primary notes-btn">
+            Checkout various schools
+        </button>
+        <button type="button" class="btn btn-primary notes-btn">
+            checkout student activity
+        </button>
+    </div>
+
+</body>
+
+</html>

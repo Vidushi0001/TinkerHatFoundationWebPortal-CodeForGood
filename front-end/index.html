@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <title>Home Page</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Acme&family=Cormorant+Garamond:wght@300&display=swap');
+
+        body {
+            font-family: 'Acme', sans-serif;
+            /* overflow-x: hidden; */
+            background-color: rgb(251, 251, 251);
+        }
+
+        .bg {
+            height: auto;
+            width: 100%;
+            background-repeat: no-repeat;
+            opacity: 0.8;
+            border: 1px solid white;
+            border-radius: 1%;
+            display: block;
+        }
+
+        .bg>img {
+            width: 100%;
+            height: 500px;
+            border-radius: 0 0 1% 1%;
+        }
+
+        .welcome {
+            position: absolute;
+            top: 100px;
+            left: 35%;
+            color: white;
+            padding: 0.5%;
+            font-size: 1.7rem;
+            color: white;
+            background: rgb(166 155 192 / 60%);
+            text-align: center;
+            border-radius: 5px 5px;
+        }
+
+        .student {
+            margin-left: 12%;
+            background: rgb(188 230 255);
+        }
+
+        .student,
+        .teacher,
+        .admin {
+            display: inline-block;
+            text-align: center;
+            font-size: 2rem;
+            padding: 2%;
+            border-radius: 30%;
+            margin-top: 2%;
+        }
+
+        .teacher {
+            background: rgb(39 255 207);
+            margin-left: 6%;
+        }
+
+        .admin {
+            background: rgb(238 255 39);
+            margin-left: 6%;
+        }
+
+        .we-are-heading {
+            text-align: center;
+            margin-top: 3%;
+            font-size: 2.5rem;
+        }
+
+        .we-are-schools {
+            width: 18%;
+            height: 200px;
+            border-radius: 50%;
+            font-size: 2rem;
+            margin-left: 5%;
+        }
+
+        .gallery {
+            margin-left: 4%;
+            margin-right: 4%;
+            margin-top: 4%;
+            border: 4px solid green;
+            border-radius: 4%;
+            width: 90%;
+            height: 80%;
+        }
+
+        .gallery-img-res {
+            border-radius: 4%;
+        }
+
+        .gallery-div>p {
+            margin-top: 2%;
+            font-size: 3rem;
+            text-align: center;
+        }
+
+        .partners {
+            margin-top: 3%;
+            text-align: center;
+            font-size: 3rem;
+        }
+
+        .partners-img {
+            display: inline-block;
+            margin-left: 7%;
+        }
+
+        .last {
+            margin-bottom: 2%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <img src="./img-res/school-kids.jpg" alt="">
+    </div>
+    <div class="welcome">
+        <p>Welcome to Our Platform</p>
+        <p>A place where you learn the essentials</p>
+    </div>
+
+    <a href="./student.html">
+        <div class="student">
+            <p>Are you a Student?</p>
+            <p>Click here</p>
+        </div>
+    </a>
+
+    <a href="./teacher_page.html">
+        <div class="teacher">
+            <p>Are you a volunteer?</p>
+            <p>Click here</p>
+        </div>
+    </a>
+
+    <a href="./admin_page.html">
+        <div class="admin">
+            <p>Are you an Admin?</p>
+            <p>Click here</p>
+        </div>
+    </a>
+
+    <div class="we-are">
+        <div class="container">
+            <p class="we-are-heading">We are</p>
+            <button type="button" class="btn btn-primary we-are-schools">5 states</button>
+            <button type="button" class="btn btn-primary we-are-schools">41+ Schools</button>
+            <button type="button" class="btn btn-primary we-are-schools">20000+ students</button>
+            <button type="button" class="btn btn-primary we-are-schools">100+ teachers</button>
+        </div>
+    </div>
+
+    <div class="gallery-div">
+        <p>Gallery</p>
+        <div id="carouselExampleIndicators" class="carousel slide gallery" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img-res/gallery1.jpg" class="d-block w-100 gallery-img-res" alt="gallery img-res">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img-res/gallery2.jpg" class="d-block w-100 gallery-img-res" alt="gallery img-res">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img-res/gallery3.jpg" class="d-block w-100 gallery-img-res" alt="gallery img-res">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="partners">
+        <p>Partners</p>
+        <div class="partners-img">
+            <img src="./img-res/partner1.png" alt="partners">
+        </div>
+        <div class="partners-img">
+            <img src="./img-res/partner2.png" alt="partners">
+        </div>
+        <div class="partners-img">
+            <img src="./img-res/partner3.png" alt="partners">
+        </div>
+    </div>
+    <div class="last"></div>
+</body>
+
+</html>
